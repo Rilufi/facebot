@@ -8,7 +8,7 @@ senha  = 'sua_senha'
 id_login     = 'login'
 id_password  = 'password'
 
-votos_cont = 0
+comment_cont = 1
 
 print("abrindo Chrome")
 
@@ -34,16 +34,16 @@ comment = "ae"
 print("abrindo página pra comentar")
 sleep(10)
 
-def votar():
+def comentar():
 
     driver.get("https://www.facebook.com/post_que_quer_comentar")
     sleep(2)
     driver.find_element_by_class_name("""_7c-t""").click()
-    driver.find_element_by_xpath("""/html/body/div[1]/div[3]/div[1]/div/div[2]/div[2]/div[2]/div[2]/div/div/div/div/div/div/div/div[1]/div/div[2]/div[2]/form/div/div[3]/div[4]/div[2]/div/div/div/div/div/form/div/div/div[2]/div/div/div/div""").send_keys(votos_cont, Keys.RETURN)
+    driver.find_element_by_xpath("""/html/body/div[1]/div[3]/div[1]/div/div[2]/div[2]/div[2]/div[2]/div/div/div/div/div/div/div/div[1]/div/div[2]/div[2]/form/div/div[3]/div[4]/div[2]/div/div/div/div/div/form/div/div/div[2]/div/div/div/div""").send_keys(comment_cont, Keys.RETURN)
 
 print("comentando")
 
 while(True):
     votar()
-    votos_cont = votos_cont + 1
-    print("{} comentários feitos".format(votos_cont))
+    comment_cont = comment_cont + 1
+    print("{} comentários feitos".format(comment_cont))

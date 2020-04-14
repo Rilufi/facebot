@@ -5,8 +5,6 @@ from selenium.webdriver.common.keys import Keys
 
 login  = 'seu@email.com'
 senha  = 'sua_senha'
-id_login     = 'login'
-id_password  = 'password'
 
 comment_cont = 1
 

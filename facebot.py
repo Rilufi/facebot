@@ -42,6 +42,6 @@ def comentar():
 print("comentando")
 
 while(True):
-    votar()
+    comentar()
     comment_cont = comment_cont + 1
     print("{} comentários feitos".format(comment_cont))

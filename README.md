@@ -33,16 +33,14 @@ $ pip install selenium
 
 Com o facebot.py e o chromedriver.exe na mesma pasta, faça o seguinte:
   
+0º Clique para editar o arquivo facebot.py, pode ser em qualquer bloco de notas ou editor de scripts que você preferir
+  
 1º Clique com o botão direito do mouse no chromedriver e em propriedades para checar sua localização (ou seja, a pasta onde você salvou)
 
-2º Clique para editar o arquivo faceot.py, pode ser em qualquer bloco de notas ou editor de scripts que você preferir
-
-3º Vá em "chrome_path" e no meio das aspas, apague o endereço caminho\até\chromedriver.exe e cole o endereço que copiou no 1º passo, ele irá ficar assim:
+2º Se a pasta contendo o facebot chamar facebot-master, não precisa fazer nenhuma alteração em chrome_path, caso não chame mude o nome da pasta ou vá em "chrome_path" e no meio das aspas, apague o endereço "../facebot-master/chromedriver.exe" e cole o endereço que copiou no 1º passo, ele irá ficar assim:
 Exemplo: chrome_path = r"C:\Users\usuario\Desktop\pasta\chromedriver.exe"
 
-4º Vá em "login" e "senha" e troque seu@email.com pelo seu email e sua_senha pela senha para efetuar o login no site
-
-5º mude o https://www.facebook.com/post_que_quer_comentar pelo endereço do post onde vc quer que o bot comente, ele está pré-programado pra comentar os números de 1 até onde vc deixar ele rodar
+3º Vá em "login" e "senha" e troque seu_email.com pelo seu email e sua_senha pela senha para efetuar o login no site
 
 ### Executando
 

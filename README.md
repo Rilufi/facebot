@@ -32,19 +32,18 @@ $ pip install selenium
 ### Edições
 
 Com o facebot.py e o chromedriver.exe na mesma pasta, faça o seguinte:
-  
-0º Clique para editar o arquivo facebot.py, pode ser em qualquer bloco de notas ou editor de scripts que você preferir
-  
-1º Clique com o botão direito do mouse no chromedriver e em propriedades para checar sua localização (ou seja, a pasta onde você salvou)
 
-2º Se a pasta contendo o facebot chamar facebot-master, não precisa fazer nenhuma alteração em chrome_path, caso não chame mude o nome da pasta ou vá em "chrome_path" e no meio das aspas, apague o endereço "../facebot-master/chromedriver.exe" e cole o endereço que copiou no 1º passo, ele irá ficar assim:
-Exemplo: chrome_path = r"C:\Users\usuario\Desktop\pasta\chromedriver.exe"
+1º Clique para editar o arquivo facebot.py, pode ser em qualquer bloco de notas ou editor de scripts que você preferir
 
-3º Vá em "login" e "senha" e troque seu_email.com pelo seu email e sua_senha pela senha para efetuar o login no site
+2º Se a pasta contendo o facebot chamar o nome padrão facebot-master, não precisa fazer nenhuma alteração em chrome_path, pule para o 4º passo se não passe pelo 3º antes:
+
+3º Clique com o botão direito do mouse no chromedriver e em propriedades para checar sua localização (ou seja, a pasta onde você salvou), caso não chame mude o nome da pasta ou vá em "chrome_path" e no meio das aspas, apague o endereço "../bbbot-master/chromedriver.exe" e cole o endereço que copiou no 1º passo, ele irá ficar assim: Exemplo: chrome_path = r"C:\Users\usuario\Desktop\pasta\chromedriver.exe"
+
+4º Vá em "login" e "senha" e troque seu_email.com pelo seu email e sua_senha pela senha para efetuar o login no site
 
 ### Executando
 
-Após isso, é só salvar a edição e executar o faceot.py na sua linha de comando com 
+Após isso, é só salvar a edição e executar o facebot.py na sua linha de comando com 
 
 $ python facebot.py 
 
@@ -55,7 +54,7 @@ $ python facebot.py
 Dentro da função comentar, vc vai ver um:
 driver.find_element_by_xpath("""/html/body/div[1]/div[3]/div[1]/div/div[2]/div[2]/div[2]/div[2]/div/div/div/div/div/div/div/div[1]/div/div[2]/div[2]/form/div/div[3]/div[4]/div[2]/div/div/div/div/div/form/div/div/div[2]/div/div/div/div""").send_keys(comment_cont, Keys.RETURN)
 
-Tudo que tem dentro de send_keys é o que ele vai comentar, você pode alterar isso, ele está automaticamente configurado para comentar números de 1 até onde você deixar e dar ENTER, você pode colocar o que quiser aí
+Tudo que tem dentro de send_keys é o que ele vai comentar, você pode alterar isso, ele está automaticamente configurado para comentar números de 1 até onde você deixar, você pode colocar o que quiser aí
 
 
 Além disso, pra mudar onde você quer que ele clique e comente, é só encontrar outros xpaths pelo código html do site

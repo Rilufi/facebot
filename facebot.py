@@ -10,7 +10,7 @@ comment_cont = 1
 
 print("abrindo Chrome")
 
-chrome_path = r"caminho\até\chromedriver.exe"
+chrome_path = r"../facebot-master/chromedriver.exe"
 driver = webdriver.Chrome(chrome_path)
 driver.implicitly_wait(10)
 
